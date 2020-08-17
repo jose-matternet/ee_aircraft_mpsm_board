@@ -1,0 +1,87 @@
+LTC4417 Design Tool,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+DESIGN PARAMS,,,,,,CH 1,CH 2,CH 3,
+,Supply Droop:,1,V,,Supply Voltage:,5.296,5.296,5.296,V
+,Vout Droop:,1.2,V,,Tolerance:,2.5,2.5,2.5,%
+,,,,,Source Resistance:,0.02,0.02,0.02,Ohms
+,,,,,,,,,
+THRESHOLDS,,,,,,CH 1,CH 2,CH 3,
+,,,,,UV Max:,4.9188,4.9188,4.9188,V
+,,,,,OV Min:,5.6732000000000005,5.6732000000000005,5.6732000000000005,V
+,,,,,UV Desired:,4.0,4.0,4.0,V
+,,,,,OV Desired:,6,6,6,V
+,,,,,,,,,
+HYSTERESIS,,,,,,,,,
+,Hys config:,Internal,,,,,,,
+,,,,,,,,,
+,IF INTERNAL,,,,,,,,
+,Hys desired:,3,%,,,,,,
+,Idiv:,86.254,uA,,,,,,
+,,,,,,,,,
+,IF EXTERNAL,,,,,,,,
+,Hys desired:,0.03,V,,,,,,
+,I UV/OV:,0,nA,,,,,,
+,R Hys:,0,kOhms,,,,,,
+,,,,,,,,,
+MOSFET,,,,,,CH 1,CH 2,CH 3,
+,,,,,VDS MAX:,-20,-20,-20,V
+,,,,,RDS ON:,80,80,80,mOhms
+,,,,,IDM:,16,16,16,A
+,,,,,CRSS:,400,400,400,pF
+,,,,,VGS MAX:,8,8,8,V
+,,,,,VTH MAX:,1.2,1.2,1.2,V
+,,,,,,,,,
+CAPACITOR,,,,,,,,,
+,Cap ESR:,0.025,Ohms,,,,,,
+,,,,,,,,,
+INRUSH PARAMETERS,,,,,,,,,
+,Supply Droop:,1,V,,,,,,
+,Vout Droop:,1.2,V,,,,,,
+,Iload:,0.9,A,,,,,,
+,Cout:,22,uF,,,,,,
+,,,,,,,,,
+INRUSH CURRENT LIMITING,,,,,,CH 1,CH 2,CH 3,
+,,,,,Tolerable Inrush:,N/A,N/A,N/A,A
+,,,,,Target Inrush:,1,1,1,A
+,,,,,Cs:,4,4,4,nF
+,,,,,Rs:,1000,1000,1000,Ohms
+,,,,,CVS:,0.1,0.1,0.1,uF
+,,,,,CV Min:,undefined,undefined,undefined,uF
+,,,,,Actual Inrush:,27.299999999999994,27.299999999999994,27.299999999999994,A
+,,,,,,,,,
+RESISTOR NETWORK,,,,,,,,,
+
+,CHANNEL 1
+,,,,
+,,Topology:,Three Resistor,
+,,R1,10.5,kOhms
+,,R2,5.6,kOhms
+,,R3,45.3,kOhms
+,,,,
+
+,CHANNEL 2
+,,,,
+,,Topology:,Three Resistor,
+,,R5,10.2,kOhms
+,,R6,5.11,kOhms
+,,R7,46.4,kOhms
+,,,,
+
+,CHANNEL 3
+,,,,
+,,Topology:,Three Resistor,
+,,R9,10.2,kOhms
+,,R10,5.11,kOhms
+,,R11,46.4,kOhms
+,,,,
+
+ACTUAL THRESHOLDS,,,,,,CH1,CH2,CH3,
+,,,,,UV Fall:,3.813664596273292,4.030698889614631,4.030698889614631,V
+,,,,,UV Rise:,3.9280745341614907,4.1516198563030695,4.1516198563030695,V
+,,,,,UV Hys:,0.11440993788819886,0.12092096668843855,0.12092096668843855,V
+,,,,,OV Fall:,5.672190476190476,5.8685,5.8685,V
+,,,,,OV Rise:,5.847619047619047,6.05,6.05,V
+,,,,,OV Hys:,0.17542857142857127,0.18149999999999977,0.18149999999999977,V
+,,,,,Idiv Total:,86.2540716612378,85.82077459082808,85.82077459082808,uA
+,,,,,Ileak Err:,0.011593655589123866,0.011652190332326283,0.011652190332326283,%
